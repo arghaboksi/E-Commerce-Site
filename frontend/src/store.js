@@ -1,0 +1,37 @@
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+import Cookie from 'js-cookie';
+import { productListReducer, productDetailsReducer, productSaveReducer, productDeleteReducer } from './reducers/productReducers';
+import { cartReducer } from './reducers/cartReducers'
+import { userSigninReducer, userRegisterReducer, userUpdateReducer, adminRegisterReducer, adminListReducer, userListReducer, adminDeleteReducer, userDeleteReducer } from './reducers/userReducers';
+import { orderCreateReducer, orderDetailsReducer, orderPayReducer, myOrderListReducer, orderListReducer, orderDeleteReducer } from './reducers/orderReducers';
+
+const cartItems = Cookie.getJSON("cartItems") || [];
+const userInfo = Cookie.getJSON("userInfo") || null;
+
+const initialState = { cart: { cartItems, shipping: {}, payment: {} }, userSignin: { userInfo } };
+const reducer = combineReducers({
+  productList: productListReducer,
+  adminList: adminListReducer,
+  userList: userListReducer,
+  productDetails: productDetailsReducer,
+  cart: cartReducer,
+  userSignin: userSigninReducer,
+  userRegister: userRegisterReducer,
+  adminRegister: adminRegisterReducer,
+  productSave: productSaveReducer,
+  productDelete: productDeleteReducer,
+  adminDelete: adminDeleteReducer,
+  userDelete: userDeleteReducer,
+  orderCreate: orderCreateReducer,
+  orderDetails: orderDetailsReducer,
+  orderPay: orderPayReducer,
+  userUpdate: userUpdateReducer,
+  myOrderList: myOrderListReducer,
+  orderList: orderListReducer,
+  orderDelete: orderDeleteReducer
+
+})
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer, initialState, composeEnhancer(applyMiddleware(thunk)));
+export default store;
