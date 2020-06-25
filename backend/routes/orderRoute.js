@@ -1,7 +1,7 @@
 import express from 'express';
 import Order from '../models/orderModel';
 import { isAuth, isAdmin } from '../util';
-
+ 
 const router = express.Router();
 
 router.get("/", isAuth, async (req, res) => {
