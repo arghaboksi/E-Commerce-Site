@@ -1,5 +1,5 @@
 # Shopping Site
-A fully functional shopping website using Node.js and ReactJS.
+A fully functional Shopping Website using Node.js and ReactJS.
 # Running Locally
 1. Clone this repo
 2. cd Shopping-Site
@@ -48,11 +48,11 @@ Once the backend server is running, go to "localhost:5000/api/users/createadmin"
 
 ![](Screenshots/AdminCreateProduct.PNG)
 
-Editing and Deleting Existing Products.
+2. Editing and Deleting Existing Products.
 
 ![](Screenshots/AdminAllTheProducts.PNG)
 
-# Mockups
+# User Journey
 1. Homepage
 
 ![](Screenshots/Homepage.PNG)
@@ -85,5 +85,27 @@ There are four filter options :
 
 ![](Screenshots/AddToCart.PNG)
 
-7. 
+7. Shipping Address
+
+![](Screenshots/Shipping.PNG)
+
+8. Payment Options
+
+![](Screenshots/Payment.PNG)
+
+9. Review Your Order before Placing
+
+![](Screenshots/PlaceOrder.PNG)
+
+10. Proceed with Payment
+
+![](Screenshots/PaymenyGateway.PNG)
+
+11. Order History 
+
+![](Screenshots/OrderPlaced.PNG)
+
+
+
+
 
