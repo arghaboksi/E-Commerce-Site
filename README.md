@@ -1,5 +1,5 @@
 # Shopping Site
-A fully functional shopping website using Node.js and ReactJS.
+A fully functional Shopping Website using Node.js and ReactJS.
 # Running Locally
 1. Clone this repo
 2. cd Shopping-Site
@@ -52,7 +52,7 @@ Once the backend server is running, go to "localhost:5000/api/users/createadmin"
 
 ![](Screenshots/AdminAllTheProducts.PNG)
 
-# Mockups
+# User Journey
 1. Homepage
 
 ![](Screenshots/Homepage.PNG)
@@ -93,7 +93,7 @@ There are four filter options :
 
 ![](Screenshots/Payment.PNG)
 
-9. Review Your Order before placing
+9. Review Your Order before Placing
 
 ![](Screenshots/PlaceOrder.PNG)
 
